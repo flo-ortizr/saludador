@@ -8,6 +8,7 @@ const form = document.querySelector("#saludar-form");
 const div = document.querySelector("#resultado-div");
 
 form.addEventListener("submit", (event) => {
+  event.preventDefault();
   const nombre = nombreInput.value;
   const genero = generoInput.value;  
   const edad = Number.parseInt(edadInput.value);
